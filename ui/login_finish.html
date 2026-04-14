@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Logged in as %s</title> <!-- The "%s" should be replaced with the person's first name. Should be simple: text.replace("%s", login.name.split(" ")[0]) -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex;"> <!-- Can't be fucked doing this in style.css -->
+        <img class="header_logo" src="./logo temp.png" alt="logo" width="64" height="64">
+        <h1 class="main_title">Solar Saver</h1>
+      </div>
+      <div class="header_links">
+        <a class="index_home" href="index.html">Home</a> |
+        <a class="index_calc" href="calc_house.html">Calculator</a> |
+        <a class="index_prov" href="prov.html">Providers</a>
+      </div>
+      <div class="header_buttons">
+          <button class="index_button1">Button1</button>
+          <button class="index_button2">Button2</button>
+      </div>
+    </header>
+    <div class="login_finish_details">
+      <h1>Solar Savings Calculator</h1>
+      <div>Welcome, %s!</div>
+      <div>Let us help you identify the potential of solar power</div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum voluptates iusto architecto cumque? Aut esse architecto quos voluptate commodi deleniti cupiditate ratione. Eaque voluptas alias aspernatur maxime quod labore perferendis?
+      <button class="login_finish_start">Start</button>
+    </div>
+  </body>
+</html>
