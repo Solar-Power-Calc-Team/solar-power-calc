@@ -314,6 +314,15 @@ body {
     font-size: large;
 }
 
+.calc_house_content_image {
+    position: absolute;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 160px;
+    justify-self: right;
+    float: right;
+}
+
 .calc_house_continue {
     width: 160px;
     background-color: #272727;
