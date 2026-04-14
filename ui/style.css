@@ -1,0 +1,366 @@
+* { margin: 0; padding: 0; } /* Reset Padding & Margins */
+
+* { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} /* Set proper global font */
+
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: gray;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+/* index.html */
+
+.header_logo {
+    padding-left: 10px;
+}
+
+.main_title {
+    padding-left: 20px;
+    align-self: center;
+}
+
+.header_links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: x-large;
+    -webkit-text-fill-color: #272727;
+}
+
+.index_home, .index_calc, .index_prov {
+    padding-left: 5px;
+    padding-right: 5px;
+    transition-duration: 0.15s;
+}
+
+.index_home:hover, .index_calc:hover, .index_prov:hover {
+    font-size: xx-large;
+}
+
+.header_buttons {
+    display: flexbox;
+    justify-self: end;
+    margin: 30px;
+}
+
+.index_header_buttons {
+    display: flexbox;
+    justify-self: end;
+}
+
+.index_button1, .index_button2 {
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition-duration: 0.4s;
+}
+
+.index_button1:hover, .index_button2:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+.index_content_span {
+    width: 100%;
+    height: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.index_content_text {
+    width: 30;
+    height: 100%;
+    justify-self: left;
+    float: left;
+    margin: 15px;
+}
+
+.index_content_image {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 160px;
+    justify-self: right;
+    float: right;
+}
+
+.index_buttons {
+    display: block;
+}
+
+.index_login, .index_signup {
+    display: block;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 15px;
+    transition-duration: 0.4s;
+}
+
+.index_login:hover, .index_signup:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+.index_body {
+    display: block;
+}
+
+/* login.html */
+
+.login_details {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+}
+
+.login_text_input {
+    background-color: white;
+    border: gray;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+
+.login_small_text {
+    font-size: x-small;
+}
+
+.login_confirm {
+    display: block;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 15px;
+    transition-duration: 0.4s;
+}
+
+.login_confirm:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+/* login_finish.html */
+
+.login_finish_details {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+}
+
+.login_finish_start {
+    width: 160px;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 15px;
+    transition-duration: 0.4s;
+}
+
+.login_finish_start:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+/* signup.html */
+
+.signup_details {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+}
+
+.signup_text_input {
+    background-color: white;
+    border: gray;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+
+.signup_small_text {
+    font-size: x-small;
+}
+
+.signup_confirm {
+    width: 160px;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 15px;
+    transition-duration: 0.4s;
+}
+
+.signup_confirm:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+/* calc_power.html */
+
+.calc_power_details {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+}
+
+.calc_power_text_input {
+    background-color: white;
+    border: gray;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+
+.calc_power_select {
+    background-color: white;
+    border: gray;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+
+.calc_power_calculate {
+    width: 160px;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 15px;
+    transition-duration: 0.4s;
+}
+
+.calc_power_calculate:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+/* calc_house.html */
+
+.calc_house_details {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+}
+
+.calc_house_text_input {
+    background-color: white;
+    border: gray;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+
+.calc_house_select {
+    background-color: white;
+    border: gray;
+    border-style: solid;
+    border-width: 2px;
+    font-size: large;
+}
+
+.calc_house_continue {
+    width: 160px;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    cursor: pointer;
+    margin: 15px;
+    transition-duration: 0.4s;
+}
+
+.calc_house_continue:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
+
+/* calc_result.html */
+
+.calc_result_details {
+    margin: 15px;
+    gap: 10px;
+    display: grid;
+}
+
+.calc_result_download, .calc_result_save {
+    width: 160px;
+    background-color: #272727;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    -webkit-text-fill-color: white;
+    font-size: larger;
+    padding: 15px 32px;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;   
+}
+
+.calc_result_download:hover, .calc_result_save:hover {
+    background-color: white;
+    -webkit-text-fill-color: #272727;
+    text-decoration-color: #272727;
+}
