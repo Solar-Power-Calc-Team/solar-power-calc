@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Household</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex;"> <!-- Can't be fucked doing this in style.css -->
+        <img class="header_logo" src="./logo temp.png" alt="logo" width="64" height="64">
+        <h1 class="main_title">Solar Saver</h1>
+      </div>
+      <div class="header_links">
+        <a class="index_home" href="index.html">Home</a> |
+        <a class="index_calc" href="calc_house.html">Calculator</a> |
+        <a class="index_prov" href="prov.html">Providers</a>
+      </div>
+      <div class="header_buttons">
+          <button class="index_button1">Button1</button>
+          <button class="index_button2">Button2</button>
+      </div>
+    </header>
+    <div class="calc_house_details">
+      <h1>Household Information</h1>
+      <h2>Let's start with your household information</h2>
+      <div>
+        <h2>Postcode</h2>
+        <input class="calc_house_text_input" type="text" name="postcode" placeholder="1234">
+      </div>
+      <div>
+        <h2>Time At Home</h2>
+        <select class="calc_house_select" name="time_at_home">
+          <option value="all_day">All Day</option>
+          <option value="half_day">Half Of The Day</option>
+        </select>
+      </div>
+      <div>
+        <h3>Address (Optional)</h3>
+        <input class="calc_house_text_input" type="text" name="address" placeholder="Address">
+      </div>
+      <div>
+        <h3>Type of Property</h3>
+        <select class="calc_house_select" name="property_type">
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+        </select>
+      </div>
+      <span style="font-size: larger;">Next we'll request your power information</span>
+      <button class="calc_house_continue">Continue</button>
+      <img src="calc_house_aside_temp.png" alt="Calc Household Aside" width="500" height="500">
+    </div>
+  </body>
+</html>
